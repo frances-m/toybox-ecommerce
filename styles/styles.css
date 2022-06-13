@@ -329,9 +329,14 @@ h4 {
 
 h5 {
   font-size: 0.7rem;
+  text-transform: uppercase;
 }
 
 button {
   background-color: transparent;
   border: none;
+}
+
+a {
+  text-decoration: none;
 }
