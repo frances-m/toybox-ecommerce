@@ -1,9 +1,13 @@
+// UTILITIES
 @import './utilities/variables';
 
+// UNIVERSAL
 @import './partials/setup';
 @import './partials/typography';
 @import './partials/baseStyles';
 
-/* UNIVERSAL */
+// SITE SECTIONS
+@import './partials/nav';
+
 
 

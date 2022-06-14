@@ -339,6 +339,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 1.4rem;
+  font-weight: bold;
 }
 
 h2 {
@@ -392,10 +393,116 @@ a {
   transition: 0.3s;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  margin-bottom: 90px;
+}
+
 .wrapper {
   max-width: 1260px;
   width: 90%;
   margin: 0 auto;
+  height: 100%;
 }
 
-/* UNIVERSAL */
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  padding: 18px 36px;
+  border: 2px solid #084b6d;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.shopButton {
+  color: #084b6d;
+  background-color: transparent;
+}
+.shopButton:hover, .shopButton:focus {
+  background-color: #084b6d;
+  color: #fff;
+}
+
+.aboutButton {
+  color: #fff;
+  background-color: #084b6d;
+}
+.aboutButton:hover, .aboutButton:focus {
+  color: #084b6d;
+  background-color: #fff;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+.announcements {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  border-top: 1px solid rgba(8, 75, 109, 0.08);
+  border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+  background-color: #fff;
+}
+.navBar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+.navBar input[type=checkbox] {
+  opacity: 0 !important;
+  position: absolute !important;
+}
+.navBar .sideMenuButton {
+  cursor: pointer;
+}
+.navBar .searchCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 115px;
+}
+.navBar .counter p {
+  background-color: #084b6d;
+  color: #fff;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}

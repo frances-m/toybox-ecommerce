@@ -1,0 +1,70 @@
+// Skip Link
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+
+    &:focus {
+        left: 0;
+    }
+}
+
+// Announcements
+
+.announcements {
+    text-align: center;
+    padding: 10px 0;
+}
+
+// navBar
+.navBar {
+    position: sticky;
+    top: 0;
+    border-top: 1px solid rgba(8, 75, 109, .08);
+    border-bottom: 1px solid rgba(8, 75, 109, .08);
+    background-color: $white;
+    
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    input[type=checkbox] {
+        opacity: 0 !important;
+        position: absolute !important;
+    }
+
+    .sideMenuButton {
+        cursor: pointer;
+    }
+    
+    .searchCart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 115px;
+    }
+
+    .counter {
+        p {
+            background-color: $primary-blue;
+            color: $white;
+            text-align: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+    }
+}
+
+// slide out nav
+
+.slideOutNav {
+  
+}

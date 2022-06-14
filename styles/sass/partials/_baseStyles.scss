@@ -1,6 +1,52 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+
+section {
+    margin-bottom: 90px;
+}
+
 .wrapper {
     max-width: 1260px;
     width: 90%;
     margin: 0 auto;
+    height: 100%;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button {
+    padding: 18px 36px;
+    border: 2px solid $primary-blue;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.shopButton {
+    color: $primary-blue;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+        background-color: $primary-blue;
+        color: $white;
+    }
+}
+
+.aboutButton {
+    color: $white;
+    background-color: $primary-blue;
+
+    &:hover,
+    &:focus {
+        color: $primary-blue;
+        background-color: $white;
+    }
+}
