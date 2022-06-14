@@ -22,7 +22,7 @@
 // import Young Serif font
 @font-face {
     font-family: "Young Serif";
-    src: url('../youngserif/YoungSerif-Regular.otf');
+    src: url('../fonts/youngserif/YoungSerif-Regular.otf');
 }
 
 // TYPOGRAPHIC STYLES
@@ -47,7 +47,6 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 1.4rem; // 28px
-    font-weight: bold;
 }
 
 h2 {
