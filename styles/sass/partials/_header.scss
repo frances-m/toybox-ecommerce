@@ -1,0 +1,28 @@
+.header {
+    background-color: $green;
+
+    .wrapper {
+        display: flex;
+        
+        align-items: center;
+        width: 100vw;
+        max-width: none;
+        margin: 0;
+    }
+}
+
+.headerImgContainer {
+    width: 42%;
+}
+
+.textContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58%;
+
+    div {
+        width: 80%;
+        max-width: 825px;
+    }
+}

@@ -405,7 +405,6 @@ section {
   max-width: 1260px;
   width: 90%;
   margin: 0 auto;
-  height: 100%;
 }
 
 button {
@@ -458,14 +457,15 @@ button {
 .announcements {
   text-align: center;
   padding: 10px 0;
+  border-bottom: 1px solid rgba(8, 75, 109, 0.08);
 }
 
 .navBar {
   position: sticky;
   top: 0;
-  border-top: 1px solid rgba(8, 75, 109, 0.08);
   border-bottom: 1px solid rgba(8, 75, 109, 0.08);
   background-color: #fff;
+  z-index: 10;
 }
 .navBar .wrapper {
   display: -webkit-box;
@@ -542,4 +542,86 @@ button {
 .menuClose {
   color: #fff;
   text-transform: uppercase;
+}
+
+.header {
+  background-color: #f8fbf3;
+}
+.header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+}
+
+.headerImgContainer {
+  width: 42%;
+}
+
+.textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 58%;
+}
+.textContainer div {
+  width: 80%;
+  max-width: 825px;
+}
+
+.categories h2 {
+  padding-top: 80px;
+}
+
+.categoryList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.categoryList .item {
+  border-radius: 10%;
+  width: calc(45% - 50px);
+  margin: 50px 25px 25px;
+  padding: 40px;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.categoryList .item img {
+  border-radius: 10%;
+}
+.categoryList .item h4 {
+  margin: 15px 0;
+}
+.categoryList .item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.categoryList .itemOne {
+  background-color: #ffd698;
+}
+.categoryList .itemTwo {
+  background-color: #f4fcff;
+}
+.categoryList .itemThree {
+  background-color: #f8fbf3;
+}
+.categoryList .itemFour {
+  background-color: #fff5f5;
 }
