@@ -1,0 +1,50 @@
+.footer {
+    background-color: $primary-blue;
+    color: $white;
+    padding: 75px;
+
+    h4 {
+        color: $white;
+    }
+}
+
+.footerFlexContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.footerNav {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 25vw;
+    }
+
+    a {
+        opacity: .5;
+    }
+
+    li {
+        margin-bottom: 15 px;
+    }
+
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialIcons {
+    a {
+        margin-right: 10px;
+    }
+
+}
+
+.juno {
+    p {
+        font-size: .8rem;
+    }
+}
