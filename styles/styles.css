@@ -490,6 +490,7 @@ button {
 }
 .navBar .sideMenuButton {
   cursor: pointer;
+  width: 110px;
 }
 .navBar .searchCart {
   display: -webkit-box;
@@ -847,6 +848,7 @@ button {
   accent-color: #084b6d;
   cursor: pointer;
 }
+
 @media (max-width: 1000px) {
   .categoryList .item {
     padding: 30px;
