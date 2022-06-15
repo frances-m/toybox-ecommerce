@@ -9,10 +9,15 @@
 
 // SITE SECTIONS
 @import './partials/nav';
+@import './partials/footer';
+
+// HOME PAGE SECTIONS
 @import './partials/header';
 @import './partials/categories';
 @import './partials/play';
-@import './partials/footer';
+
+// CONTACT PAGE SECTIONS
+@import './partials/form';
 
 // MEDIA QUERIES
 @import './partials/mediaQueries';

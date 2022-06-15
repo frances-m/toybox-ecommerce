@@ -544,6 +544,61 @@ button {
   text-transform: uppercase;
 }
 
+.footer {
+  background-color: #084b6d;
+  color: #fff;
+  padding: 75px;
+}
+.footer h4 {
+  color: #fff;
+}
+
+.footerFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.footerNav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footerNav a {
+  opacity: 0.5;
+}
+.footerNav ul {
+  width: 110px;
+  margin-left: 50px;
+}
+.footerNav li {
+  margin-bottom: 15px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.socialIcons a {
+  margin-right: 10px;
+}
+
+.juno p {
+  font-size: 0.8rem;
+}
+
 .header {
   background-color: #f8fbf3;
 }
@@ -586,6 +641,7 @@ button {
 .contactHeader {
   background-color: #fff5f5;
   padding-top: 120px;
+  text-align: center;
 }
 .contactHeader .wrapper {
   -webkit-box-orient: vertical;
@@ -682,61 +738,115 @@ button {
   margin-bottom: 50px;
 }
 
-.footer {
-  background-color: #084b6d;
-  color: #fff;
-  padding: 75px;
-}
-.footer h4 {
-  color: #fff;
-}
-
-.footerFlexContainer {
+.contact form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 80px auto;
+  width: 70%;
+  max-width: 1000px;
 }
-
-.footerNav nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.contact input,
+.contact textarea {
+  border: none;
+  font-family: "Jakarta Sans";
+  color: #333;
+  padding: 0 0 10px 5px;
+  margin-bottom: 40px;
 }
-.footerNav a {
-  opacity: 0.5;
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
-.footerNav ul {
-  width: 110px;
-  margin-left: 50px;
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
-.footerNav li {
-  margin-bottom: 15px;
+.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
-
-.social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.contact input::-ms-input-placeholder, .contact textarea::-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
-
-.socialIcons a {
-  margin-right: 10px;
+.contact input::placeholder,
+.contact textarea::placeholder {
+  font-size: 0.8rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
-
-.juno p {
+.contact input:focus,
+.contact textarea:focus {
+  border-bottom: 1px solid #084b6d;
+  outline: none;
+}
+.contact input {
+  border-bottom: 1px solid #eee;
+}
+.contact textarea {
+  border: 1px solid #eee;
+  border-top: none;
+}
+.contact .message-label {
+  text-transform: uppercase;
   font-size: 0.8rem;
 }
-
+.contact select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  font-family: "Jakarta Sans";
+  color: #084b6d;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eee;
+  background-image: url("../assets/caret-down-solid.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 0;
+}
+.contact option {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: "Jakarta Sans";
+  text-transform: uppercase;
+}
+.contact fieldset {
+  border: none;
+  padding: 0;
+}
+.contact fieldset label {
+  font-size: 0.8rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.contact fieldset input {
+  accent-color: #084b6d;
+  cursor: pointer;
+}
 @media (max-width: 1000px) {
   .categoryList .item {
     padding: 30px;
