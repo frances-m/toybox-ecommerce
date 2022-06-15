@@ -53,7 +53,7 @@
 
 			<!-- Navbar -->
 				<!-- Logo -->
-			<a href="#home" class="logo">
+			<a href="./index.html" class="logo">
 				<h1>Toybox</h1>
 			</a>
 
@@ -75,7 +75,55 @@
 		</div> <!-- END wrapper  -->
 	</nav>
 
-    	<!-- Footer -->
+    <header class="contactHeader">
+        <div class="wrapper">
+
+            <h5>Contact</h5>
+            <h3>We're here to help</h3>
+            <p>Any other questions? Reach out at <a href="mailto:support@toybox.io">support@toybox.io</a></p>
+
+        </div> <!-- END wrapper -->
+    </header>
+
+    <main class="mainContent contact" id="main">
+        <div class="wrapper">
+            <form action="">
+
+                <label class="sr-only" for="name">First name</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+
+                <label class="sr-only" for="surname">Surname</label>
+                <input type="text" name="surname" id="surname" placeholder="Surname">
+
+                <label class="sr-only" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+
+                <label class="sr-only" for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone">
+
+                <select name="reason" id="reason">
+                    <option value="placeholder" disabled selected>Reason for contacting</option>
+                    <option value="refund">Refund request</option>
+                    <option value="status">Order status update</option>
+                    <option value="praise">Praise!</option>
+                    <option value="complaint">General concerns</option>
+                </select>
+
+                <label for="message">Message for me</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <fieldset>
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to the Terms & Conditions</label>
+                </fieldset>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </div> <!-- END wrapper -->
+    </main>
+
+    <!-- Footer -->
 	<footer class="footer" id="footer">
 		<div class="wrapper">
 
