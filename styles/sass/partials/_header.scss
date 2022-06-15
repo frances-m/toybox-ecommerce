@@ -2,8 +2,7 @@
     background-color: $green;
 
     .wrapper {
-        display: flex;
-        
+        display: flex;     
         align-items: center;
         width: 100vw;
         max-width: none;
@@ -12,7 +11,11 @@
 }
 
 .headerImgContainer {
-    width: 42%;
+    width: 42vw;
+
+    img {
+        width: 100%;
+    }
 }
 
 .textContainer {

@@ -18,11 +18,15 @@
     nav {
         display: flex;
         justify-content: space-between;
-        width: 25vw;
     }
 
     a {
         opacity: .5;
+    }
+
+    ul {
+        width: 110px;
+        margin-left: 50px;
     }
 
     li {
